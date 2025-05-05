@@ -1,64 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Vulnerable Mom</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <script>
-            function searchSections() {
-                const query = document.getElementById('search-bar').value.toLowerCase();
-                const sectionLinks = {
-                    "baby gear": "sections/baby_gear.html",
-                    "sleeping bag": "sections/baby_gear.html#sleeping-bag",
-                    "furniture": "sections/baby_gear.html#furniture",
-                    "newborn reflux": "sections/newborn_reflux.html",
-                    "books": "sections/books.html",
-                    "toys": "sections/toys.html",
-                    "breastfeeding": "sections/breastfeeding.html",
-                    "tools": "sections/breastfeeding.html#tools",
-                    "positions": "sections/breastfeeding.html#positions"
-                };
-                if (sectionLinks[query]) {
-                    window.location.href = sectionLinks[query];
-                } else {
-                    alert("Section not found. Please try a different term.");
-                }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerable Mom</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function searchSections() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const sectionLinks = {
+                "baby gear": "sections/baby_gear.html",
+                "sleeping bag": "sections/baby_gear.html#sleeping-bag",
+                "furniture": "sections/baby_gear.html#furniture",
+                "newborn reflux": "sections/newborn_reflux.html",
+                "books": "sections/books.html",
+                "toys": "sections/toys.html",
+                "breastfeeding": "sections/breastfeeding.html",
+                "tools": "sections/breastfeeding.html#tools",
+                "positions": "sections/breastfeeding.html#positions"
+            };
+            if (sectionLinks[query]) {
+                window.location.href = sectionLinks[query];
+            } else {
+                alert("Section not found. Please try a different term.");
             }
-        </script>
-    </head>
-    <body class="is-preload">
-        <!-- Wrapper -->
-        <div id="wrapper">
-            <!-- Main -->
-            <section id="main">
-                <header>
-                    <h1>Vulnerable Mom</h1>
-                    <p>Your guide to navigating the early days of motherhood.</p>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="sections/baby_gear.html">Baby Gear</a></li>
-                        <li><a href="sections/newborn_reflux.html">Newborn Reflux</a></li>
-                        <li><a href="sections/books.html">Books</a></li>
-                        <li><a href="sections/toys.html">Toys</a></li>
-                        <li><a href="sections/breastfeeding.html">Breastfeeding</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <input type="text" id="search-bar" placeholder="Search for a section...">
-                    <button onclick="searchSections()">Search</button>
-                </div>
-            </section>
-            <!-- Footer -->
-            <footer id="footer">
-                <p>Connect with me on:</p>
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:40px; height:auto;">
-                </a>
-            </footer>
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="top-banner">
+            <input type="text" id="search-bar" placeholder="Search for a section...">
+            <button onclick="searchSections()">Search</button>
         </div>
-        <script src="assets/js/main.js"></script>
-    </body>
-</html>
+        <h1>Welcome to VulnerableMom</h1>
+        <p>Your guide to navigating the early days of motherhood.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="sections/baby_gear.html">Baby Gear</a></li>
+            <li><a href="sections/newborn_reflux.html">Newborn Reflux</a></li>
+            <li><a href="sections/books.html">Books</a></li>
+            <li><a href="sections/toys.html">Toys</a></li>
+            <li><a href="sections/breastfeeding.html">Breastfeeding</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <
